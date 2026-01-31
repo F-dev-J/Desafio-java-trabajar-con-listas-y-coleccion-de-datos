@@ -1,3 +1,5 @@
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class Principal {
@@ -30,6 +32,7 @@ public class Principal {
         }
         System.out.println("********************");
         System.out.println("compras realizadas:\n");
+        Collections.sort(tarjeta.getListaDeCompras());
         for (Compra compra : tarjeta.getListaDeCompras()){
             System.out.println(compra.getDescripcion()+" - "+compra.getValor());
         }
